@@ -11,6 +11,7 @@ import UseState from "./components/UseState.jsx";
 import UseEffect from "./components/UseEffect.jsx";
 import UseTransition from "./components/UseTransition.jsx";
 import API from "./components/API.jsx";
+import ActivityComp from "./components/ActivityComp.jsx";
 import AddUser from "./components/AddUser.jsx";
 import AddSkill from "./components/AddSkill.jsx";
 import EditUser from "./components/EditUser.jsx";
@@ -21,6 +22,7 @@ createRoot(document.getElementById("root")).render(
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/activity" element={<ActivityComp />} />
         <Route path="/api" element={<API />} />
         <Route path="/add-user" element={<AddUser/>} />
         <Route path="/add-skill" element={<AddSkill/>} />
