@@ -41,8 +41,11 @@ const API = () => {
         <h2>API in React Js</h2>
       {offline ? <h4>Server is offline</h4> :
         <>
-        <NavLink className="btn btn-success" to="/add-user">
+        <NavLink className="btn btn-success me-2" to="/add-user">
           Add user
+        </NavLink>
+        <NavLink className="btn btn-success me-2" to="/add-skill">
+          Add Skill
         </NavLink>
         <table className="table table-bordered my-2">
           <thead>
