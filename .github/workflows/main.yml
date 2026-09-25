@@ -24,10 +24,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: /
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -51,7 +47,7 @@ jobs:
       - name: Upload production build
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
