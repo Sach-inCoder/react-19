@@ -17,24 +17,28 @@ import AddSkill from "./components/AddSkill.jsx";
 import EditUser from "./components/EditUser.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <StrictMode>
+  <StrictMode>
+    <BrowserRouter basename="/react-19">
       <Header />
+
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/activity" element={<ActivityComp />} />
         <Route path="/api" element={<API />} />
-        <Route path="/add-user" element={<AddUser/>} />
-        <Route path="/add-skill" element={<AddSkill/>} />
-        <Route path="/user/:id" element={<EditUser/>} />
+        <Route path="/add-user" element={<AddUser />} />
+        <Route path="/add-skill" element={<AddSkill />} />
+        <Route path="/user/:id" element={<EditUser />} />
+
         <Route path="/hooks" element={<Hooks />}>
-          <Route path="useState" element={<UseState/>} />
-          <Route path="useEffect" element={<UseEffect/>} />
-          <Route path="useTransition" element={<UseTransition/>} />
+          <Route path="useState" element={<UseState />} />
+          <Route path="useEffect" element={<UseEffect />} />
+          <Route path="useTransition" element={<UseTransition />} />
         </Route>
-        <Route path="/*" element={<NotFound />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
+
       <Footer />
-    </StrictMode>
-  </BrowserRouter>,
+    </BrowserRouter>
+  </StrictMode>
 );
