@@ -16,14 +16,13 @@ function Header({ title }) {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <a className="navbar-brand" href="/">
+            <NavLink className="navbar-brand" to="/">
               News
-            </a>
+            </NavLink>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/">
-                  
                     Home
                   </NavLink>
                 </li>

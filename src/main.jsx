@@ -31,7 +31,7 @@ createRoot(document.getElementById("root")).render(
       <Header />
 
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="" element={<App />} />
         <Route path="/activity" element={<ActivityComp />} />
         <Route path="/api" element={<API />} />
         <Route path="/add-user" element={<AddUser />} />
