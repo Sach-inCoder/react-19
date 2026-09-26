@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <script>
@@ -10,7 +10,7 @@
       const route = path.slice(repo.length);
 
       window.location.replace(
-        repo + "/?p=" + encodeURIComponent(route)
+        repo + "/?redirect=" + encodeURIComponent(route)
       );
     }
   </script>
