@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script>
+    const repo = "/react-19";
+    const path = window.location.pathname;
+
+    if (path.startsWith(repo)) {
+      const route = path.slice(repo.length);
+
+      window.location.replace(
+        repo + "/?p=" + encodeURIComponent(route)
+      );
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
