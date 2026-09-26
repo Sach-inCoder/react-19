@@ -15,7 +15,16 @@ import ActivityComp from "./components/ActivityComp.jsx";
 import AddUser from "./components/AddUser.jsx";
 import AddSkill from "./components/AddSkill.jsx";
 import EditUser from "./components/EditUser.jsx";
+const params = new URLSearchParams(window.location.search);
+const redirect = params.get("redirect");
 
+if (redirect) {
+  window.history.replaceState(
+    null,
+    "",
+    `/react-19${redirect}`
+  );
+}
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter basename="/react-19">
